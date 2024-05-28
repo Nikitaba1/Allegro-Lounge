@@ -31,7 +31,7 @@ public class webDriverUtility {
 	public void waitForElementPresent(WebDriver driver, WebElement element) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.visibilityOf(element));
-		System.out.println("NOt good");
+		
 	}
 	/**
 	 * This method will wait for the element to be clickable
@@ -42,7 +42,7 @@ public class webDriverUtility {
 	public void waitForElementIsClickable(WebDriver driver, WebElement element) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.elementToBeClickable(element));
-		System.out.println("hello");
+		
 	}
 	/**
 	 * This method will switch tab using url
